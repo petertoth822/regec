@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regéci Vigéc</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    .hero {
+      background-image: url('bg2.jpg'); /* Cseréld ki saját képre */
+      background-size: cover;
+      background-position: center;
+    }
+    .bg-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="text-gray-900 font-sans">
+  <!-- Hero szekció -->
+  <header class="hero h-screen flex items-center justify-center text-white">
+    <div class="bg-overlay w-full h-full flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-4xl md:text-9xl font-bold text-red-500">HAMAROSAN</h1>
+      <h2 class="text-4xl md:text-6xl font-bold">Regéci Vigéc</h2>
+      <p class="mt-4 text-lg md:text-xl">Pihenés és ízek harmóniája a természet lágy ölén</p>
+    </div>
+  </header>
+
+  <!-- Részletek szekció -->
+  <section class="py-16 px-6 md:px-20 bg-white">
+    <div class="grid md:grid-cols-3 gap-10 text-center">
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Hangulatos szállás</h2>
+        <p>Csendes környezet, kényelmes szobák.</p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Helyi ízek bisztrónkban</h2>
+        <p>Friss alapanyagokból készült ételek.</p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-semibold mb-2">Természet közelsége</h2>
+        <p>Túraútvonalak, madárcsicsergés és nyugalom a napi rohanás helyett.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galéria szekció -->
+  <section class="bg-gray-100 py-16 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-center mb-10">Fotógaléria</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <img src="sz.jpg" alt="szállás" class="rounded-lg shadow-lg">
+      <img src="ett.jpg" alt="bisztró" class="rounded-lg shadow-lg">
+      <img src="tj.jpg" alt="tájkép" class="rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- Kapcsolat szekció -->
+  <footer class="bg-white py-12 px-6 md:px-20 border-t">
+    <h2 class="text-2xl font-bold mb-6 text-center">Kapcsolat</h2>
+    <div class="max-w-2xl mx-auto text-center mb-6">
+      <p class="text-lg mb-2">Email: <a href="mailto:info@videkiszallas.hu" class="text-green-700 hover:underline">regecivigec@gmail.com</a></p>
+      <p class="text-lg mb-4">Telefon: <a href="tel:+36301234567" class="text-green-700 hover:underline">+36 30 123 4567</a></p>
+      <div class="flex justify-center space-x-4">
+        <a href="https://facebook.com" class="text-gray-600 hover:text-green-700 text-xl" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" class="text-gray-600 hover:text-green-700 text-xl" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" class="text-gray-600 hover:text-green-700 text-xl" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="max-w-4xl mx-auto">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.501510694742!2d21.32391731559704!3d48.42803817924851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740c4bc36890171%3A0x720419a29528c65a!2sReg%C3%A9c%2C%20F%C5%91%20%C3%BAt%2082%2C%203899!5e0!3m2!1shu!2shu!4v1722358391000!5m2!1shu!2shu" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+    <p class="text-center text-sm text-gray-500 mt-6">© 2025 Regéci Vigéc</p>
+  </footer>
+</body>
+</html>
