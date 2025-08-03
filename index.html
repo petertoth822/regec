@@ -6,7 +6,7 @@
   <title>Regéci Vigéc</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     .hero {
       background-image: url('bg2.jpg'); /* Cseréld ki saját képre */
@@ -16,15 +16,23 @@
     .bg-overlay {
       background-color: rgba(0, 0, 0, 0.5);
     }
+    .font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+  }
   </style>
 </head>
 <body class="text-gray-900 font-sans">
   <!-- Hero szekció -->
   <header class="hero h-screen flex items-center justify-center text-white">
     <div class="bg-overlay w-full h-full flex flex-col items-center justify-center text-center px-6">
-      <h1 class="text-4xl md:text-9xl font-bold text-red-500">HAMAROSAN</h1>
-      <h2 class="text-4xl md:text-6xl font-bold">Regéci Vigéc</h2>
-      <p class="mt-4 text-lg md:text-xl">Pihenés és ízek harmóniája a természet lágy ölén</p>
+      <h1 class="text-4xl md:text-9xl font-bold font-quicksand text-red-500 transform transition-transform duration-300 hover:scale-105">
+  HAMAROSAN</h1>
+    <h1 class="text-4xl md:text-6xl font-bold font-quicksand transform transition-transform duration-300 hover:scale-105">
+  Regéci Vigéc
+</h1>
+   <p class="mt-4 text-lg md:text-xl font-quicksand transform transition-transform duration-300 hover:scale-105">
+  Pihenés és ízek harmóniája a természet lágy ölén
+</p>
     </div>
   </header>
 
@@ -32,19 +40,19 @@
   <section class="py-16 px-6 md:px-20 bg-white">
     <div class="space-y-12 md:grid md:grid-cols-3 md:gap-10 md:space-y-0">
       <div class="text-center">
-        <h2 class="text-2xl font-semibold mb-2">Hangulatos szállás</h2>
+        <h2 class="text-4xl md:text-2xl font-bold font-quicksand transform transition-transform duration-300 hover:scale-105">Hangulatos szállás</h2>
         <p class="mb-4">Csendes környezet, kényelmes szobák.</p>
-        <img src="sz.jpg" alt="szállás" class="rounded-lg shadow-lg w-full h-auto">
+        <img src="sz.jpg" alt="szállás" class="rounded-lg shadow-lg w-full h-auto transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
       </div>
       <div class="text-center">
-        <h2 class="text-2xl font-semibold mb-2">Helyi ízek bisztrónkban</h2>
+        <h2 class="text-4xl md:text-2xl font-bold font-quicksand transform transition-transform duration-300 hover:scale-105">Helyi ízek bisztrónkban</h2>
         <p class="mb-4">Friss alapanyagokból készült ételek </p>
-        <img src="ett.jpg" alt="bisztró" class="rounded-lg shadow-lg w-full h-auto">
+       <img src="ett.jpg" alt="bisztró" class="rounded-lg shadow-lg w-full h-auto transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
       </div>
       <div class="text-center">
-        <h2 class="text-2xl font-semibold mb-2">Természet közelsége</h2>
+        <h2 class="text-4xl md:text-2xl font-bold font-quicksand transform transition-transform duration-300 hover:scale-105">Természet közelsége</h2>
         <p class="mb-4">Túraútvonalak, madárcsicsergés és nyugalom a napi rohanás helyett.</p>
-        <img src="tj.jpg" alt="tájkép" class="rounded-lg shadow-lg w-full h-auto">
+        <img src="tj.jpg" alt="tájkép" class="rounded-lg shadow-lg w-full h-auto transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
       </div>
     </div>
   </section>
