@@ -19,9 +19,23 @@
     .font-quicksand {
     font-family: 'Quicksand', sans-serif;
   }
-    @keyframes spin-once {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+     @keyframes soft-bounce {
+    0%, 100% {
+      transform: translateY(-5%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+  }
+
+  .soft-bounce {
+    animation: soft-bounce 1s infinite;
+  }
+
+  @media (max-width: 640px) {
+    .soft-bounce {
+      animation: none;
+    }
   }
   .hover\:spin-once:hover {
     animation: spin-once 0.6s linear;
@@ -32,9 +46,9 @@
   <!-- Hero szekció -->
   <header class="hero h-screen flex items-center justify-center text-white">
     <div class="bg-overlay w-full h-full flex flex-col items-center justify-center text-center px-6">
-     <h1 class="text-9xl font-bold font-quicksand text-red-500 animate-bounce">
+    <h1 class="text-9xl font-bold text-red-500 soft-bounce">
   HAMAROSAN
-    </h1>
+</h1>
     <h1 class="text-4xl md:text-6xl font-bold font-quicksand transform transition-transform duration-300 hover:scale-105">
   Regéci Vigéc
 </h1>
